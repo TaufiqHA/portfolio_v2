@@ -6,6 +6,7 @@
     <title>Website Portfolio</title>
     <link rel="stylesheet" href="src/output.css" />
   </head>
+  <script src="https://unpkg.com/feather-icons"></script>
   <body class="font-poppins">
     <!-- navbar section start -->
     <div class="navbar bg-base-100 px-10">
@@ -74,7 +75,7 @@
           <h2 class="text-4xl font-bold mb-10">
             Hi, I'm Taufiq. Nice to meet you
           </h2>
-          <p class="text-center text-lg">
+          <p class="text-center text-lg pb-20">
             Since beginning my journey as a freelance designer 12 years ago,
             I've done remote work for agencies, consulted for startups, and
             collaborated with talented people to create digital products for
@@ -82,11 +83,70 @@
             curious, and perpetually working on improving my chops.
           </p>
         </div>
-        <span class="absolute bottom-93 left-1/2 -translate-x-1/2">
+        <span class="absolute bottom-113 left-1/2 -translate-x-1/2">
           <img src="img/workspace.png" alt="workspace" class="w-xl" />
         </span>
       </div>
     </section>
     <!-- about section end -->
+
+    <!-- skill section start -->
+    <section>
+      <div class="relative container h-screen">
+        <div
+          class="absolute w-10/12 -top-20 left-1/2 -translate-x-1/2 rounded-2xl shadow-md bg-white flex"
+        >
+          <div
+            class="flex flex-col items-center p-10 border-r border-r-gray-300"
+          >
+            <div class="bg-teal-500 p-5 w-fit rounded-full">
+              <i data-feather="code"></i>
+            </div>
+            <h2 class="text-lg font-semibold mt-5">Web Developer</h2>
+            <p class="text-center text-base mt-3 w-2/3">
+              I like to code things from scratch, and enjoy bringing ideas to
+              life in the browser.
+            </p>
+            <h2 class="text-lg mt-5 text-teal-500">Languages I speak:</h2>
+            <p class="text-center text-base mt-2">HTML, CSS, JavaScript, PHP</p>
+            <h2 class="text-lg mt-5 text-teal-500">Dev Tools:</h2>
+            <ul class="text-center mt-2">
+              <li>Bootstrap</li>
+              <li>Tailwind CSS</li>
+              <li>React Js</li>
+              <li>Laravel</li>
+              <li>Github</li>
+              <li>VS Code</li>
+            </ul>
+          </div>
+          <div class="flex flex-col items-center p-10">
+            <div class="bg-teal-500 p-5 w-fit rounded-full">
+              <i data-feather="terminal"></i>
+            </div>
+            <h2 class="text-lg font-semibold mt-5">
+              Machine Learning Engineer
+            </h2>
+            <p class="text-center text-base mt-3 w-2/3">
+              I genuinely care about people, and enjoy helping them work on
+              their craft.
+            </p>
+            <h2 class="text-lg mt-5 text-teal-500">Languages I speak:</h2>
+            <p class="text-center text-base mt-2">Python, SQL</p>
+            <h2 class="text-lg mt-5 text-teal-500">Dev Tools:</h2>
+            <ul class="text-center mt-2">
+              <li>Tensorflow</li>
+              <li>Keras</li>
+              <li>Google Colab</li>
+              <li>VS Code</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- skill setion end -->
+
+    <script>
+      feather.replace();
+    </script>
   </body>
 </html>

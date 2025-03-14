@@ -19,6 +19,7 @@
   "homepage": "https://github.com/TaufiqHA/portfolio_v2#readme",
   "dependencies": {
     "@tailwindcss/cli": "^4.0.14",
+    "feather-icons": "^4.29.2",
     "tailwindcss": "^4.0.14"
   },
   "devDependencies": {
