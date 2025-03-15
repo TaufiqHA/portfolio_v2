@@ -7,3 +7,19 @@
 @theme {
   --font-poppins: "Poppins", sans-serif;
 }
+
+.hamburger-line {
+  @apply w-[21.5px] h-[2px] bg-gray-600;
+}
+
+.hamburger-toggle > span:nth-child(1) {
+  @apply rotate-45;
+}
+
+.hamburger-toggle > span:nth-child(2) {
+  @apply scale-0;
+}
+
+.hamburger-toggle > span:nth-child(3) {
+  @apply -rotate-45;
+}
