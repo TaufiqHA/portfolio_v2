@@ -23,3 +23,7 @@
 .hamburger-toggle > span:nth-child(3) {
   @apply -rotate-45;
 }
+
+.show-menu {
+  @apply scale-100;
+}

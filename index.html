@@ -9,7 +9,9 @@
   <script src="https://unpkg.com/feather-icons"></script>
   <body class="font-poppins">
     <!-- navbar section start -->
-    <div class="navbar bg-base-100 flex items-center px-10 sticky top-0 z-10">
+    <div
+      class="navbar relative bg-base-100 flex items-center px-10 sticky top-0 z-10"
+    >
       <div class="flex-1">
         <a class="btn btn-ghost text-lg text-teal-500 md:text-xl">Taufiq HA</a>
       </div>
@@ -29,9 +31,14 @@
       </div>
       <!-- hamburger menu end -->
 
-      <div>
-        <ul class="menu menu-horizontal px-1">
-          <li>
+      <div
+        id="menu"
+        class="absolute right-10 top-full z-[999] bg-white scale-0 origin-top-right transition duration-300 ease-in-out lg:static lg:scale-100"
+      >
+        <ul
+          class="menu menu-horizontal px-1 flex flex-col gap-4 justify-between rounded-xl shadow-md shadow-gray-500 lg:flex-row lg:shadow-none lg:gap-0"
+        >
+          <li class="mx-10 lg:mx-0">
             <div class="px-5 py-3 hover:bg-white">
               <a
                 href="#portfolio"
@@ -41,7 +48,7 @@
               </a>
             </div>
           </li>
-          <li>
+          <li class="mx-10 lg:mx-0 mb-5 lg:mb-0">
             <div
               class="px-5 py-3 rounded-full border-2 border-teal-500 hover:bg-teal-500 text-teal-500 hover:text-white"
             >
@@ -55,13 +62,13 @@
 
     <!-- hero section start -->
     <section>
-      <div class="container px-7 py-25">
+      <div class="container mx-auto px-7 py-25">
         <div class="flex flex-col items-center justify-center">
-          <h2 class="text-5xl font-bold mb-5">
+          <h2 class="text-3xl text-center lg:text-5xl font-bold mb-5">
             <span class="text-teal-500">Web Developer</span> & Machine Learning
             Engineer
           </h2>
-          <p class="text-lg">
+          <p class="text-md lg:text-lg">
             I design and code beautifully simple things, and I love what I do.
           </p>
         </div>
@@ -88,14 +95,14 @@
 
     <!-- about section start -->
     <section>
-      <div class="relative container bg-teal-500 mt-96">
+      <div class="relative bg-teal-500 mt-96">
         <div
           class="w-2xl flex flex-col justify-center items-center mx-auto py-20"
         >
-          <h2 class="text-4xl font-bold mb-10">
+          <h2 class="text-2xl lg:text-4xl font-bold mb-10">
             Hi, I'm Taufiq. Nice to meet you
           </h2>
-          <p class="text-center text-lg pb-20">
+          <p class="mx-10 lg:mx-0 text-center text-md lg:text-lg pb-20">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum amet
             quia ducimus, ad tempore temporibus possimus consectetur. Alias
             fugiat, sit, laboriosam dolorum esse illum praesentium, incidunt nam
@@ -104,8 +111,12 @@
             quibusdam nobis nam aperiam..
           </p>
         </div>
-        <span class="absolute bottom-120 left-1/2 -translate-x-1/2">
-          <img src="img/workspace.png" alt="workspace" class="w-xl" />
+        <span class="w-full absolute bottom-112 lg:bottom-120">
+          <img
+            src="img/workspace.png"
+            alt="workspace"
+            class="mx-auto lg:w-lg"
+          />
         </span>
       </div>
     </section>
@@ -113,12 +124,12 @@
 
     <!-- skill section start -->
     <section>
-      <div class="relative container h-[80vh]">
+      <div class="relative container mx-auto h-[130vh] lg:h-[80vh]">
         <div
-          class="absolute w-10/12 -top-20 left-1/2 -translate-x-1/2 rounded-2xl shadow-md bg-white flex"
+          class="absolute w-10/12 -top-20 left-1/2 -translate-x-1/2 rounded-2xl shadow-md bg-white flex flex-col lg:flex-row"
         >
           <div
-            class="flex flex-col items-center p-10 border-r border-r-gray-300"
+            class="flex flex-col items-center p-10 border-b border-b-gray-300 lg:border-r lg:border-r-gray-300"
           >
             <div class="bg-teal-500 p-5 w-fit rounded-full">
               <i data-feather="code"></i>
@@ -168,10 +179,12 @@
 
     <!-- portfolio section start -->
     <section id="portfolio">
-      <div class="container">
+      <div class="container mx-auto">
         <div class="flex flex-col justify-center items-center">
-          <h2 class="text-4xl font-bold mb-5 text-teal-500">My Recent Work</h2>
-          <p class="text-lg text-base mb-10">
+          <h2 class="text-2xl lg:text-4xl font-bold mb-5 text-teal-500">
+            My Recent Work
+          </h2>
+          <p class="text-base lg:text-lg mb-10 mx-10 lg:mx-0">
             Here are a few past design projects I've worked on. Want to see
             more? <a href="#" class="text-teal-500">Email me</a>.
           </p>
@@ -179,7 +192,7 @@
         <div class="flex flex-col justify-center items-center gap-20 px-20">
           <!-- portfolio 1 -->
           <div class="flex gap-10">
-            <div class="relative">
+            <div class="relative hidden lg:block">
               <img
                 src="img/portfolio/sita 1.jpeg"
                 alt="sita 1"
@@ -191,7 +204,7 @@
                 class="absolute w-[200px] bottom-0 -right-30 rounded-2xl shadow-lg shadow-gray-500"
               />
             </div>
-            <div class="ms-30 flex flex-col justify-center gap-4">
+            <div class="lg:ms-30 flex flex-col justify-center gap-4">
               <h2 class="text-md font-semibold">SITA Matematika</h2>
               <p class="text-base">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos
@@ -224,9 +237,11 @@
           </div>
           <!-- portfolio 2 -->
           <div class="flex gap-10 mb-40">
-            <div class="flex flex-col justify-center items-end me-30 gap-4">
+            <div
+              class="flex flex-col justify-center lg:items-end lg:me-30 gap-4"
+            >
               <h2 class="text-md font-semibold">NILAIQ</h2>
-              <p class="text-base text-end">
+              <p class="text-base lg:text-end">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos
                 consequatur laborum tempore, assumenda est autem laboriosam
                 saepe at placeat incidunt?
@@ -254,7 +269,7 @@
                 </div>
               </div>
             </div>
-            <div class="relative">
+            <div class="relative hidden lg:block">
               <img
                 src="img/portfolio/nilaiq 1.jpeg"
                 alt="nilaiq 1"
@@ -274,12 +289,16 @@
 
     <!-- footer section start -->
     <section>
-      <div class="relative container bg-teal-500 p-20">
+      <div class="relative bg-teal-500 p-20">
         <div
-          class="w-full flex flex-col justify-center items-center gap-5 mt-40"
+          class="w-full flex flex-col justify-center items-center gap-5 mt-50 lg:mt-40"
         >
-          <h2 class="text-3xl font-bold mb-3 text-white">Taufiq HA</h2>
-          <p class="text-2xl font-semibold mb-3 text-white">
+          <h2 class="text-2xl lg:text-3xl font-bold mb-3 text-white">
+            Taufiq HA
+          </h2>
+          <p
+            class="text-xl lg:text-2xl font-semibold mb-3 text-white text-center"
+          >
             Living, learning, & leveling up one day at a time.
           </p>
           <div class="flex gap-5 mb-3">
@@ -302,7 +321,7 @@
           <p class="text-md text-white mt-3">Handcrafted by &copy; taufiq ha</p>
         </div>
         <div
-          class="absolute -top-20 left-1/2 -translate-x-1/2 w-11/12 flex justify-around items-center mx-auto p-15 bg-gray-800 rounded-3xl text-white"
+          class="absolute -top-20 left-1/2 -translate-x-1/2 w-11/12 flex flex-col gap-7 lg:flex-row justify-around items-center mx-auto p-15 bg-gray-800 rounded-3xl text-white"
         >
           <h2 class="text-2xl font-bold">Start a project</h2>
           <p class="text-center text-lg w-lg">
