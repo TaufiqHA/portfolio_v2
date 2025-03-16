@@ -8,6 +8,10 @@
   --font-poppins: "Poppins", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .hamburger-line {
   @apply w-[21.5px] h-[2px] bg-gray-600;
 }
